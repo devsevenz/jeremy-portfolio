@@ -1,0 +1,243 @@
+/* global design */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #213448;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*  main container */
+
+main {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #547792;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    padding: 2rem;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px solid #E7F2EF;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #F8FAFC;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.125rem;
+    color: #F8FAFC;
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+nav button {
+    background-color: #547792;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+    background-color: #94B4C1;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1);
+}
+
+nav button.active-nav {
+    background-color: #708993;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1);
+}
+
+/*sections*/
+section {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.4s ease-in-out, transfrom 0.4s ease-in-out;
+}
+
+
+section#homePage h2 {
+    text-align: center !important;
+    color: #F8FAFC;
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+#picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1.5rem auto;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+    border: 4px solid #213448;
+}
+
+section p {
+    font-size: 1rem;
+    text-align: center;
+    color: #F8FAFC;
+    margin-bottom: 1rem;
+}
+
+#aboutPage p{
+    text-align: left;
+}
+
+#aboutPage h2 {
+    color: #F8FAFC;
+}
+
+/*div design*/
+
+#education, #hobbies {
+    background-color: #94B4C1;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+
+#education h3, #hobbies h3 {
+    font-size: 1.5rem;
+    color: #F8FAFC;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+ul li {
+    background-color: #BCCCDC;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    color: #F8FAFC;
+}
+
+/*Project Cards*/
+
+#projectsPage > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+#projectsPage > div > div {
+    background-color: #94B4C1;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#projectsPage > div > div:hover {
+    transform: translateY(-5px);
+}
+
+#projectsPage > div > div > h3 {
+    color: #F8FAFC;
+    margin-top: 0;
+    text-align: center;
+}
+
+#projectsPage h2 {
+    color: #F8FAFC;
+}
+
+/*Contacts Page*/
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #94B4C1;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-item:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.contact-info{
+    color: #F8FAFC;
+    font-size: 1rem;
+}
+#contactPage {
+    text-align: center;
+}
+
+#contactPage h2 {
+    color: #F8FAFC;
+    margin-bottom: 1rem;
+}
+
+#homepage {
+    text-align: center;
+}
