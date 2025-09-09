@@ -1,6 +1,6 @@
 # Jeremy Abante Jr. - Portfolio Website
 
-A responsive personal portfolio website showcasing my skills as a Full-Stack Developer.
+A responsive personal portfolio website showcasing my begginer skills as a Full-Stack Developer.
 
 ## 🚀 Features
 - Responsive design
