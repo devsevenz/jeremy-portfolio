@@ -13,14 +13,6 @@ A responsive personal portfolio website showcasing my begginer skills as a Full-
 - CSS3
 - JavaScript (ES6)
 
-## 📱 Live Demo
-[View Live Site](https://devsevenz.github.io/jeremy-portfolio)
-
-## 🔧 Installation
-1. Clone this repository
-2. Open `index.html` in your browser
-3. Enjoy!
-
 ## 📧 Contact
 - Email: jeremy.abante@unc.edu.ph
 - GitHub: [@sevendevenz](https://github.com/devsevenz)
